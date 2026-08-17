@@ -8,4 +8,4 @@ RUN curl -fsSL https://cli.kiro.dev/install | bash
 
 ENV PATH=$PATH:/root/.local/bin/
 
-CMD ["/bin/bash", "-c", "kiro-cli login --use-device-flow && kiro-cli"]
+CMD ["/bin/bash", "-c", "kiro-cli login --use-device-flow || kiro-cli"]
